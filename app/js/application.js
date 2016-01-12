@@ -29,17 +29,6 @@ define(['angularAMD', 'lodash', 'app-i18n-resource', 'angular-route', 'ng-dialog
 
         var navController =
             function($scope, $rootScope, $http, $q, $translate) {
-                var clear_storage = function() {
-                    sessionStorage.setItem('token', '');
-                    sessionStorage.setItem('current_user_name', '');
-                    sessionStorage.setItem('current_user_id', '');
-                    sessionStorage.setItem('current_user_roles', '[]');
-                };
-                $rootScope.authService = (function() {
-                    return {
-                    }
-                })();
-
                 $scope.locales = _.sortBy(_.keys(i18n));
                 $scope.change_language = function(key) {
                     $translate.use(key)
