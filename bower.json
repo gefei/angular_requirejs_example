@@ -1,0 +1,29 @@
+{
+  "name": "js_testing_example",
+  "authors": [
+    "Gefei Zhang <gefei.zhang@pst.ifi.lmu.de>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.22",
+    "ng-dialog": "~0.5.6",
+    "bootstrap": "~3.3.6",
+    "angularAMD": "~0.2.1",
+    "angular-translate": "~2.8.1",
+    "angular-route": "~1.4.8",
+    "angular-bootstrap": "~1.0.0",
+    "lodash": "~3.10.1",
+    "angular-sanitize": "~1.4.8"
+  }
+}
