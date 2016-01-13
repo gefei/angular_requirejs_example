@@ -4,10 +4,12 @@
 
 'use strict';
 
-define(['angularAMD', 'lodash', 'app-i18n-resource', 'angular-route', 'ng-dialog', 'ui-bootstrap', 'ui-bootstrap-templates', 'angular-translate', 'angular-sanitize'],
+define(['angularAMD', 'lodash', 'app-i18n-resource', 'angular-route', 'ng-dialog',
+        'ui-bootstrap', 'ui-bootstrap-templates', 'angular-translate', 'angular-sanitize',
+        'angular-tree-control'],
     function(angularAMD, _, i18n) {
 
-        var m = angular.module('app', ['ngDialog', 'ngRoute', 'ui.bootstrap', 'pascalprecht.translate', 'ngSanitize']);
+        var m = angular.module('app', ['ngDialog', 'ngRoute', 'ui.bootstrap', 'pascalprecht.translate', 'ngSanitize', 'treeControl']);
 
         m.config(function($routeProvider) {
             $routeProvider.

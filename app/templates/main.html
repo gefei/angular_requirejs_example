@@ -5,6 +5,17 @@
                 <h2>{{'dialog_example' | translate}}</h2>
                 <button ng-click="show_dialog()" class="btn btn-default" ng-href role="button">{{'show_dialog' | translate}} &raquo;</button></p>
             </div>
+            <div class="col-md-4">
+                <h2>{{'tree_example' | translate}}</h2>
+                <treecontrol class="tree-classic"
+                             tree-model="dataForTheTree"
+                             options="treeOptions"
+                             on-selection="showSelected(node)"
+                             selected-node="node1">
+                    employee: {{node.name}} age {{node.age}}
+                </treecontrol>
+                {{node1}}
+            </div>
         </div>
     </div>
 </div>
