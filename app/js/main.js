@@ -10,10 +10,13 @@ require.config({
         'angular-sanitize': '../bower_components/angular-sanitize/angular-sanitize',
         'angular-route': '../bower_components/angular-route/angular-route',
         'angular-tree-control': '../bower_components/angular-tree-control/angular-tree-control',
+        'angular-image-map': '../bower_components/angular-image-maps-rwd/angular-rwdImageMaps',
         'ui-bootstrap': '../bower_components/angular-bootstrap/ui-bootstrap',
         'ui-bootstrap-templates': '../bower_components/angular-bootstrap/ui-bootstrap-tpls',
         'ng-dialog': '../bower_components/ng-dialog/js/ngDialog',
         'lodash': '../bower_components/lodash/lodash',
+        'jquery': '../bower_components/jquery/dist/jquery',
+        'jquery-image-map': '../bower_components/jQuery-rwdImageMaps/jquery.rwdImageMaps',
 
         'application': 'js/application',
         'app-i18n-resource': 'js/i18n/app-i18n-resource',
@@ -34,7 +37,10 @@ require.config({
 
         'ui-bootstrap-templates': ['angular', 'ui-bootstrap'],
         'angularAMD': ['angular'],
-        'ng-dialog': ['angular']
+        'ng-dialog': ['angular'],
+
+        'jquery-image-map': ['jquery'],
+        'angular-image-map': ['jquery-image-map', 'angular']
     },
 
     // kick start application

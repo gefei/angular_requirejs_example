@@ -9,6 +9,7 @@ describe('Sample application', function() {
         var btn_de = element(by.buttonText('EN'));
         btn_de.click();
 
+        /*
         var btn_show_dialog = element(by.partialButtonText('Show'));
         btn_show_dialog.click();
 
@@ -17,5 +18,8 @@ describe('Sample application', function() {
 
         var btn_close = element(by.buttonText('Close'));
         btn_close.click();
+
+        btn_show_dialog.click();
+        */
     });
 });

@@ -6,10 +6,10 @@
 
 define(['angularAMD', 'lodash', 'app-i18n-resource', 'angular-route', 'ng-dialog',
         'ui-bootstrap', 'ui-bootstrap-templates', 'angular-translate', 'angular-sanitize',
-        'angular-tree-control'],
+        'angular-tree-control', 'angular-image-map'],
     function(angularAMD, _, i18n) {
 
-        var m = angular.module('app', ['ngDialog', 'ngRoute', 'ui.bootstrap', 'pascalprecht.translate', 'ngSanitize', 'treeControl']);
+        var m = angular.module('app', ['ngDialog', 'ngRoute', 'ui.bootstrap', 'pascalprecht.translate', 'ngSanitize', 'treeControl', 'rwdImageMaps']);
 
         m.config(function($routeProvider) {
             $routeProvider.

@@ -24,6 +24,10 @@ define(['tree-employees', 'application', 'dialog-service'], function(tree) {
         }
         $scope.dataForTheTree = tree;
 
+        $scope.click = function(msg) {
+            alert(msg);
+        }
+
     };
     // main_controller.$inject = ['$scope', 'DialogService'];
     return main_controller;
