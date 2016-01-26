@@ -11,17 +11,18 @@
                              tree-model="dataForTheTree"
                              options="treeOptions"
                              on-selection="showSelected(node)"
-                             selected-node="node1">
+                             selected-node="selected">
                     employee: {{node.name}} age {{node.age}}
                 </treecontrol>
-                {{node1}}
+                {{selected}}
             </div>
         </div>
         <div>
-            <img class="rwdimgmap" height="300" src="images/sample_img.png" usemap="#sample_img" alt="">
+            <img class="rwdimgmap" height="300" src="images/sample_img.png" usemap="#sample_img" alt="" border="10">
             <map name="sample_img">
-                <area shape="circle" coords="50,50,100,100" ng-click="click('1')"/>
-                <area shape="rect" coords="0,0,200,200" ng-click="click('2')"/>
+                <area shape="rect"   coords="50,20,354,100" ng-click="select(1)" title="rect"/>
+                <area shape="circle" coords="100,160,40"    ng-click="select(2)" title="circle"/>
+                <area shape="poly"   coords="260,100,160,280,360,280" ng-click="select(0)" title="poly"/>
             </map>
         </div>
     </div>

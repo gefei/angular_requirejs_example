@@ -24,8 +24,9 @@ define(['tree-employees', 'application', 'dialog-service'], function(tree) {
         }
         $scope.dataForTheTree = tree;
 
-        $scope.click = function(msg) {
-            alert(msg);
+        $scope.select = function(msg) {
+            console.log(msg);
+            $scope.selected = $scope.dataForTheTree[msg]
         }
 
     };
