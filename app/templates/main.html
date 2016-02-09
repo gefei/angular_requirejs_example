@@ -3,7 +3,8 @@
         <div class="row">
             <div class="col-md-4">
                 <h2>{{'dialog_example' | translate}}</h2>
-                <button ng-click="show_dialog()" class="btn btn-default" ng-href role="button">{{'show_dialog' | translate}} &raquo;</button></p>
+                <p><button ng-click="show_dialog()" class="btn btn-default" ng-href role="button">{{'show_dialog' | translate}} &raquo;</button></p>
+                <button ng-click="b2()" class="btn btn-danger">2</button>
             </div>
             <div class="col-md-4">
                 <h2>{{'tree_example' | translate}}</h2>
@@ -14,7 +15,6 @@
                              selected-node="selected">
                     employee: {{node.name}} age {{node.age}}
                 </treecontrol>
-                {{selected}}
             </div>
         </div>
         <div>
